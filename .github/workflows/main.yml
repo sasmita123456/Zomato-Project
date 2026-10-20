@@ -139,9 +139,9 @@ jobs:
       # Trivy Security Scan
       # ------------------------------------------
       - name: Install Trivy
-        uses: aquasecurity/setup-trivy@v0.2.4
+        uses: aquasecurity/setup-trivy@e07451d2e059ed86c2870430ea286b3a9e0bf241
         with:
-          version: latest
+          version: v0.68.2
 
       - name: Verify Trivy
         run: trivy --version
